@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Agronegócios Sustentáveis</title>
+
+    <!-- Estilo personalizado -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery e Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="header-content">
+            <img src="img/download.jpeg" alt="Logo Agronegócios" class="logo">
+            <h1>Agrinho 2024</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="precos.html">Preços</a></li>
+                <li><a href="contato.html" class="active">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <div class="container">
+            <section id="contact">
+                <h2>Contato</h2>
+                <p>Entre em contato conosco preenchendo o formulário abaixo. Nossa equipe responderá o mais breve possível.</p>
+                
+                <form action="https://formspree.io/f/xjvndwab" method="POST" class="form-horizontal">
+                    <div class="form-group">
+                        <label for="name" class="control-label col-sm-2">Nome:</label>
+                        <div class="col-sm-10">
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="control-label col-sm-2">Email:</label>
+                        <div class="col-sm-10">
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" class="control-label col-sm-2">Telefone:</label>
+                        <div class="col-sm-10">
+                            <input type="tel" id="phone" name="phone" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reason" class="control-label col-sm-2">Motivo:</label>
+                        <div class="col-sm-10">
+                            <select id="reason" name="reason" class="form-control" required>
+                                <option value="consulta">Consulta</option>
+                                <option value="suporte">Suporte</option>
+                                <option value="vendas">Vendas</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="control-label col-sm-2">Mensagem:</label>
+                        <div class="col-sm-10">
+                            <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Agronegócios Brasil. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Botão voltar ao topo -->
+    <button id="back-to-top" title="Voltar ao topo">^</button>
+
+    <!-- Script personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,278 @@
+/* Base e tipografia */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f2f1; /* 60% - verde claro */
+    color: #2e3d49;
+    font-size: 13px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #388e3c; /* 30% - verde médio */
+    color: #ffeb3b; /* Amarelo para contraste */
+    padding: 21px 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.logo {
+    height: 55px;
+}
+
+.header-content h1 {
+    font-size: 21px;
+    margin: 0;
+    color: #ffeb3b; /* Amarelo */
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap: 13px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: #ffeb3b; /* Amarelo */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 8px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    border-bottom: 2px solid #1565c0;
+}
+
+/* Conteúdo principal */
+main {
+   
+    padding: 34px;
+    font-size: 13px;
+  
+}
+
+section {
+    margin-bottom: 34px;
+}
+
+/* Títulos */
+h2 {
+    font-size: 21px;
+    color: #388e3c;
+}
+
+h3 {
+    font-size: 13px;
+    color: #1565c0;
+}
+
+/* Tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 21px;
+    background-color: white;
+    font-size: 13px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #388e3c;
+    color: #ffeb3b; /* Amarelo */
+    padding: 13px;
+}
+
+td {
+    padding: 13px;
+}
+
+tr:nth-child(even) {
+    background-color: #f1f8f6;
+}
+
+/* Rodapé */
+footer {
+    padding: 21px;
+    background-color: #388e3c;
+    color: #ffeb3b; /* Amarelo */
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Botão de voltar ao topo */
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 34px;
+    right: 34px;
+    background-color: #1565c0;
+    color: #ffeb3b; /* Amarelo */
+    border: none;
+    padding: 13px 21px;
+    font-size: 13px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#back-to-top:hover {
+    background-color: #0d47a1;
+}
+
+/* Formulários */
+form {
+    background-color: white;
+    padding: 34px;
+    border-radius: 13px;
+    max-width: 600px;
+    margin: 34px auto;
+    box-shadow: 0 0 13px rgba(0, 0, 0, 0.05);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 21px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #388e3c;
+    box-shadow: 0 0 5px rgba(56, 142, 60, 0.5);
+}
+
+form button {
+    background-color: #1565c0;
+    color: #ffeb3b; /* Amarelo */
+    padding: 13px 21px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+form button:hover {
+    background-color: #0d47a1;
+}
+
+/* Grade de serviços */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 21px;
+    margin-bottom: 21px;
+}
+
+.servico {
+    background-color: white;
+    border: 2px solid #d3cfcf;
+    padding: 21px;
+    border-radius: 13px;
+    text-align: center;
+}
+
+.servico img {
+    width: 100%;
+    height: auto;
+    max-width: 144px;
+    margin: 0 auto;
+    display: block;
+}
+
+.servico h3 {
+    margin-top: 13px;
+    font-size: 13px;
+}
+
+.servico p {
+    margin: 13px 0;
+}
+
+.preco {
+    font-weight: bold;
+    color: #388e3c;
+}
+
+/* Botões gerais */
+button {
+    background-color: #1565c0;
+    color: #ffeb3b; /* Amarelo */
+    border: none;
+    padding: 13px 21px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #0d47a1;
+}
+
+/* Responsividade */
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-content {
+        justify-content: center;
+        margin-bottom: 13px;
+    }
+
+    .logo {
+        height: 34px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    form {
+        max-width: 100%;
+        padding: 21px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .servico img {
+        max-width: 89px;
+    }
+}

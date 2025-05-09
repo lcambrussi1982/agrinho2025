@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Define o idioma principal da página como Português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna o site responsivo em dispositivos móveis -->
+    <title>Site de Agronegócios Sustentáveis</title> <!-- Título da aba do navegador -->
+
+    <!-- Link para o arquivo CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Importação do CSS do Bootstrap 3.4.1 (framework de layout e componentes visuais) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+    <!-- Importação do jQuery (necessário para o Bootstrap funcionar corretamente) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <!-- Importação do JavaScript do Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <div class="header-content"> <!-- Container do logo e título -->
+            <img src="img/agrinho.jpeg" alt="Logo Agronegócios" class="logo"> <!-- Logotipo -->
+            <h1>Agrinho 2025</h1> <!-- Título principal -->
+        </div>
+
+        <!-- Menu de navegação principal -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="precos.html">Preços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+        <div class="container"> <!-- Container do Bootstrap para centralizar e aplicar margens -->
+
+            <!-- Início do carrossel de imagens (slider) -->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                
+                <!-- Indicadores de slide (pontos abaixo das imagens) -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Imagens do carrossel -->
+                <div class="carousel-inner">
+                    <div class="item active"> <!-- Slide ativo -->
+                        <img src="img/leonardo1.jpg" alt="Agronegocios" style="width:100%;">
+                        <div class="carousel-caption"> <!-- Texto sobre a imagem -->
+                            <h3>Agrinho é top é pop, Agrinho é tec</h3>
+                            <p>O Agronegócio Movimenta o país</p>
+                        </div>
+                    </div>
+
+                    <!-- Demais slides -->
+                    <div class="item">
+                        <img src="img/leonardo2.jpg" alt="Agronegocios" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>Agrinho é top é pop, Agrinho é tec</h3>
+                            <p>O Agronegócio Movimenta o país</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/leonardo3.jpg" alt="Agronegocios" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>Agrinho é top é pop, Agrinho é tec</h3>
+                            <p>O Agronegócio Movimenta o país</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controles de navegação (esquerda e direita) -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Seção de serviços sustentáveis -->
+        <section id="servicos-sustentaveis">
+            <h2>Nossos Serviços Sustentáveis</h2>
+            <div class="grid-container"> <!-- Layout em grade para os serviços -->
+
+                <!-- Cada bloco representa um serviço -->
+                <div class="servico">
+                    <img src="img/consultoria.jpeg" alt="Consultoria Ambiental">
+                    <h3>Consultoria Ambiental</h3>
+                    <p>Orientações para produção agrícola com responsabilidade ambiental.</p>
+                    <button>Saiba Mais</button>
+                </div>
+
+                <div class="servico">
+                    <img src="img/manejo.jpg" alt="Manejo Sustentável">
+                    <h3>Manejo Sustentável</h3>
+                    <p>Implantação de técnicas que preservam o solo e os recursos naturais.</p>
+                    <button>Saiba Mais</button>
+                </div>
+
+                <div class="servico">
+                    <img src="img/energiaSolar.jpeg" alt="Energia Solar Rural">
+                    <h3>Energia Solar Rural</h3>
+                    <p>Instalação de painéis solares para reduzir custos e poluição.</p>
+                    <button>Saiba Mais</button>
+                </div>
+
+                <div class="servico">
+                    <img src="img/Reflorestamento.jpg" alt="Reflorestamento">
+                    <h3>Projetos de Reflorestamento</h3>
+                    <p>Apoio técnico para recuperação de áreas degradadas com espécies nativas.</p>
+                    <button>Saiba Mais</button>
+                </div>
+
+                <div class="servico">
+                    <img src="img/compostagem.jpeg" alt="Compostagem Orgânica">
+                    <h3>Compostagem Orgânica</h3>
+                    <p>Transforme resíduos agrícolas em adubo natural de alta qualidade.</p>
+                    <button>Saiba Mais</button>
+                </div>
+
+                <!-- Repetição de alguns serviços anteriores (pode ser substituído ou removido) -->
+                <div class="servico">
+                    <img src="img/energiaSolar.jpeg" alt="Energia Solar Rural">
+                    <h3>Energia Solar Rural</h3>
+                    <p>Instalação de painéis solares para reduzir custos e poluição.</p>
+                    <button>Saiba Mais</button>
+                </div>
+
+                <div class="servico">
+                    <img src="img/Reflorestamento.jpg" alt="Reflorestamento">
+                    <h3>Projetos de Reflorestamento</h3>
+                    <p>Apoio técnico para recuperação de áreas degradadas com espécies nativas.</p>
+                    <button>Saiba Mais</button>
+                </div>
+
+                <div class="servico">
+                    <img src="img/compostagem.jpeg" alt="Compostagem Orgânica">
+                    <h3>Compostagem Orgânica</h3>
+                    <p>Transforme resíduos agrícolas em adubo natural de alta qualidade.</p>
+                    <button>Saiba Mais</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Espaço extra -->
+        <br><br><br>
+    </main>
+    
+    
+    <!-- Rodapé da página -->
+
+
+
+    <footer>
+        <p>&copy; 2025 Agronegócios Brasil. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Botão para voltar ao topo da página -->
+    <button id="back-to-top" title="Voltar ao topo">^</button>
+
+    <!-- Importação do script JS personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>
